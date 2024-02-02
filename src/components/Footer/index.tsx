@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
+          key: 'School of Mechatronic Engineering and Automation',
           title: 'SMEA',
           href: 'https://auto.shu.edu.cn/',
           blankTarget: true,
