@@ -19,12 +19,8 @@ export const initialStateConfig = {
 
 
 export const request: RequestConfig = {
-  timeout: 1000,
-  errorConfig: {},
-  middlewares: [],
-  requestInterceptors: [],
-  responseInterceptors: [],
-  errorHandler,
+  timeout: 10000,
+
 };
 
 /**
