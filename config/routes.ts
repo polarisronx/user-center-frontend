@@ -11,11 +11,12 @@ export default [
   { path: '/welcome', name: '欢迎', icon: 'smile', component: './Welcome' },
   {
     path: '/admin',
-    name: '管理页',
+    name: '用户管理',
     icon: 'crown',
     access: 'canAdmin',
     routes: [
-      { path: '/admin/sub-page', name: '二级管理页', icon: 'smile', component: './Welcome' },
+
+      { path: '/admin/user-manage', name: '用户查询', icon: 'smile', component: './Admin/UserManage' },
       { component: './404' },
     ],
   },
