@@ -140,6 +140,26 @@ const Register: React.FC = () => {
                   }
                 ]}
               />
+
+              <ProFormText.Password
+                name="authCode"
+                fieldProps={{
+                  size: 'large',
+                  prefix: <LockOutlined className={styles.prefixIcon} />,
+                }}
+                placeholder={'请再次授权码'}
+                rules={[
+                  {
+                    required: true,
+                    message: '授权码是必填项！',
+                  },
+                  {
+                    max:5,
+                    type:'string',
+                    message:'长度不能大于5'
+                  }
+                ]}
+              />
             </>
           )}
 

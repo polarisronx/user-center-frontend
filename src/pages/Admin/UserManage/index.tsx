@@ -76,6 +76,12 @@ const columns: ProColumns<API.CurrentUser>[] = [
 
   },
   {
+    title: '授权码',
+    dataIndex: 'authCode',
+    copyable: true,
+
+  },
+  {
     title: '角色',
     dataIndex: 'userRole',
     valueType: "select",
@@ -124,11 +130,13 @@ const columns: ProColumns<API.CurrentUser>[] = [
       <a
         key="editable"
         onClick={() => {
+          // @ts-ignore
           action?.startEditable?.(record.id);
         }}
       >
         编辑
       </a>,
+      // @ts-ignore
       <a href={record.url} target="_blank" rel="noopener noreferrer" key="view">
         查看
       </a>,
@@ -146,6 +154,8 @@ const columns: ProColumns<API.CurrentUser>[] = [
 
 export default () => {
   const actionRef = useRef<ActionType>();
+  // @ts-ignore
+  // @ts-ignore
   return (
     <ProTable<API.CurrentUser>
       columns={columns}

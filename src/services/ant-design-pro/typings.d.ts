@@ -11,6 +11,7 @@ declare namespace API {
     phone?: string;
     nickname?: string;
     userStatus?: number;
+    authCode?: string;
     userRole?: number;
     createTime?: Date;
   };
@@ -65,6 +66,7 @@ declare namespace API {
     userAccount?: string;
     userPassword?: string;
     checkPassword?: boolean;
+    authCode?: string;
     type?: string;
   };
 
